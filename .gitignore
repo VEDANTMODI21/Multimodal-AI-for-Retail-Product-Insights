@@ -1,0 +1,54 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+venv/
+env/
+.env
+
+# PyTorch / ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+checkpoints/
+runs/
+logs/
+wandb/
+
+# Data files (too large for git)
+data/
+datasets/
+*.csv
+*.tsv
+*.parquet
+*.json
+!package.json
+*.h5
+*.hdf5
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Misc
+*.log
+*.tmp
+*.bak
+node_modules/
