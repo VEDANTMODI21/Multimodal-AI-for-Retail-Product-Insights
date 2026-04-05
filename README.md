@@ -2,15 +2,13 @@
 
 > **A Unified Framework Integrating Visual, Textual, and Structured Data**
 
-[![Paper](https://img.shields.io/badge/Status-Research%20Paper-blue)]()
-[![University](https://img.shields.io/badge/Institution-SRM%20University-orange)]()
 [![Python](https://img.shields.io/badge/Framework-PyTorch%202.0-red)]()
 
 ---
 
 ## 📝 Overview
 
-This repository contains the research documentation and knowledge base for our paper on **Multimodal AI for Retail Product Insights**. We propose a unified pipeline that fuses visual features (ViT), textual features (BERT), and structured transactional data to generate human-readable business insights using a fine-tuned LLM.
+This repository contains the codebase and architecture for **Multimodal AI for Retail Product Insights**. We propose a unified pipeline that fuses visual features (ViT), textual features (BERT), and structured transactional data to generate human-readable business insights using a fine-tuned LLM.
 
 ### Key Contribution
 
@@ -24,18 +22,7 @@ Structured Data → MLP → Numerical Features ─┘
 
 ---
 
-## 👥 Authors
 
-| Name | Program |
-|------|---------|
-| Krish Sati | B.Tech CSE (Big Data Analytics) |
-| Vedant Modi | B.Tech CSE (Big Data Analytics) |
-| **Hema Sri Harsha Guggilam** | B.Tech CSE (Big Data Analytics) |
-| Pritham Mukesh Krishna | B.Tech CSE (Big Data Analytics) |
-
-**Institution:** SRM University
-
----
 
 ## 🏆 Key Results
 
@@ -51,10 +38,12 @@ Structured Data → MLP → Numerical Features ─┘
 ## 📂 Repository Structure
 
 ```
-├── README.md        # This file — quick overview
+├── README.md        # Quick overview
+├── src/             # Source code (Model, Dataset, Training, Inference)
+├── requirements.txt # System dependencies
+├── data/            # Local dataset folder (Manual Add)
 ├── context.md       # Full project context, motivation, and setup
-├── knowledge.md     # Deep technical knowledge base + viva preparation
-└── .gitignore       # Git ignore rules
+└── knowledge.md     # Deep technical knowledge base
 ```
 
 ### Documentation Guide
@@ -93,21 +82,8 @@ Structured Data → MLP → Numerical Features ─┘
 
 ---
 
-## 📄 Citation
 
-```bibtex
-@article{sati2025multimodal,
-  title   = {Multimodal AI for Retail Product Insights: A Unified Framework
-             Integrating Visual, Textual, and Structured Data},
-  author  = {Sati, Krish and Modi, Vedant and Guggilam, Hema Sri Harsha
-             and Krishna, Pritham Mukesh},
-  year    = {2025},
-  note    = {B.Tech CSE (Big Data Analytics), SRM University}
-}
-```
-
----
 
 ## 📜 License
 
-This project is for academic and research purposes.
+This project is open-source and intended for generalized use in retail AI platforms.
