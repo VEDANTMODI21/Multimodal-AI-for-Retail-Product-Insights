@@ -20,21 +20,6 @@ Customer Reviews → BERT → Text Features ─┼─→ Fusion → Llama-2 7B �
 Structured Data → MLP → Numerical Features ─┘
 ```
 
----
-
-
-
-## 🏆 Key Results
-
-| Metric | Value |
-|--------|-------|
-| Insight Quality Score | **0.83** (beats LLaVA v1.5's 0.79) |
-| Statistical Significance | p < 0.01 |
-| Inference Latency | **115ms** per product |
-| Inter-Rater Reliability | Fleiss' κ = 0.782 |
-
----
-
 ## 📂 Repository Structure
 
 ```
@@ -66,23 +51,6 @@ Structured Data → MLP → Numerical Features ─┘
 | Framework | PyTorch 2.0 + DDP + AMP |
 | Hardware | 2× NVIDIA A100 (80 GB) |
 | Dataset | Amazon Review Dataset 2023 (15,420 products) |
-
----
-
-## 📊 Comparative Results
-
-| Model | Quality Score |
-|-------|:---:|
-| Structured-only MLP | 0.41 |
-| Image-only ViT | 0.58 |
-| Text-only BERT | 0.64 |
-| CLIP + BERT + LLM | 0.76 |
-| LLaVA v1.5 (zero-shot) | 0.79 |
-| **Our Framework** | **0.83** |
-
----
-
-
 
 ## 📜 License
 
