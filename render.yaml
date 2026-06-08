@@ -7,3 +7,6 @@ services:
     startCommand: gunicorn src.api:app --bind 0.0.0.0:$PORT
     plan: free
     autoDeploy: true
+    envVars:
+      - key: FREE_DEPLOYMENT
+        value: "true"

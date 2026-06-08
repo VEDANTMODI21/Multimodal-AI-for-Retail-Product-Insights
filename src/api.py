@@ -9,7 +9,6 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.inference import RetailInsightPredictor
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend access
@@ -21,7 +20,13 @@ predictor = None
 def get_predictor():
     global predictor
     if predictor is None:
-        predictor = RetailInsightPredictor()
+        free_mode = os.environ.get("FREE_DEPLOYMENT", "false").lower() in ("1", "true", "yes")
+        if free_mode:
+            from src.free_inference import FreeRetailInsightPredictor
+            predictor = FreeRetailInsightPredictor()
+        else:
+            from src.inference import RetailInsightPredictor
+            predictor = RetailInsightPredictor()
     return predictor
 
 

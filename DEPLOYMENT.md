@@ -15,6 +15,7 @@ If Render does not detect the manifest automatically, use these settings:
 - **Build Command:** `python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt`
 - **Start Command:** `gunicorn src.api:app --bind 0.0.0.0:$PORT`
 - **Plan:** `free`
+- **Note:** Free Render deployment uses a lightweight heuristic predictor to stay within the 512Mi memory limit.
 
 ## Service endpoints
 
