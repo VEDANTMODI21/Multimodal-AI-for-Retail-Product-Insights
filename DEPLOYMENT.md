@@ -12,8 +12,8 @@ This repository is prepared for free deployment on Render using the included `re
 
 If Render does not detect the manifest automatically, use these settings:
 
-- **Build Command:** `pip install -r requirements.txt`
-- **Start Command:** `gunicorn src.api:app`
+- **Build Command:** `python -m pip install --upgrade pip setuptools wheel && python -m pip install -r requirements.txt`
+- **Start Command:** `gunicorn src.api:app --bind 0.0.0.0:$PORT`
 - **Plan:** `free`
 
 ## Service endpoints
